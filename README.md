@@ -41,5 +41,4 @@ Needed libraries: PyGame.
 * Barrier node > Black
 * Traversed node > Red
 * Open node > Green
-* Current search node > Blue
 * Retracing node > Purple
