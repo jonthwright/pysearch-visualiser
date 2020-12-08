@@ -1,5 +1,4 @@
 import pygame
-from queue import PriorityQueue
 from Window_Func import clear_processing
 from Colour import colour
 
@@ -37,8 +36,6 @@ def dfs(draw, grid, start, end):
 					neighbour.previous = cur_node
 					queue.append(neighbour)
 					neighbour.make_open()
-		elif cur_node in visited and cur_node != start:
-			cur_node.colour = (0,0,255)
 
 		draw()
 

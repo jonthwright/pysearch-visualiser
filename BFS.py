@@ -1,5 +1,4 @@
 import pygame
-from queue import PriorityQueue
 from Window_Func import clear_processing
 from Colour import colour
 
@@ -37,8 +36,6 @@ def bfs(draw, grid, start, end):
 					queue.append(neighbour)
 					neighbour.make_open()
 					neighbour.previous = cur_node
-		elif cur_node in visited and cur_node != start:
-			cur_node.colour = (0,0,255)
 
 		draw()
 
