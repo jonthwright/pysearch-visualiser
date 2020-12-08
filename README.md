@@ -3,7 +3,7 @@ Visual Python implementation of different graph search algorithms. Implemented u
 
 Implemented algorithms: *Depth-First Search (DFS)*, *Breadth-First Search (BFS)*, *A\* Search*.
 
-Needed libraries: PyGame.
+Needed libraries: *PyGame*
 
 # Controls
 * Click/Drag Right mouse
@@ -28,6 +28,7 @@ Needed libraries: PyGame.
  * Clear everything
  
 # How to use
+1. Run the _*Main.py*_ file to start the program
 1. Set the start node (right click)
 1. Set the target node (right click)
 1. Draw the barrier nodes (right click, draggable) *(Optional)*
