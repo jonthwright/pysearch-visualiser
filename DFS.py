@@ -20,7 +20,7 @@ def dfs(draw, grid, start, end):
 			if event.type == pygame.KEYDOWN:
 				if event.key == pygame.K_ESCAPE:
 					clear_processing(grid)
-					return False
+					return Falses
 
 		cur_node = queue.pop()
 
