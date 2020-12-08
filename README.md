@@ -1,6 +1,8 @@
 # pysearch-visualiser
 Visual Python implementation of different graph search algorithms. Implemented using PyGame.
 
+Implemented algorithms: *Depth-First Search (DFS)*, *Breadth-First Search (BFS)*, *A\* Search*
+
 # Controls
 * Click/Drag Right mouse
   * First click: sets the start node
