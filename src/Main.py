@@ -1,10 +1,10 @@
 import pygame
 from Colour import colour
-from Window_Func import *
+from Window import *
 
-from DFS import dfs
-from BFS import bfs
-from Astar import astar
+from algorithms.DFS import dfs
+from algorithms.BFS import bfs
+from algorithms.Astar import astar
 
 WIDTH = 1000
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
@@ -12,6 +12,24 @@ pygame.display.set_caption("A* Path Finding Algorithm")
 
 
 def main(win, width):
+	print('\033c', end='')
+	print('''
+CONTROLS...
+          
+RIGHT MOUSE (CLICK): Set the start node (ORANGE), Set the target node (TURQOUISE).
+RIGHT MOUSE (CLICK/DRAG): Draw the barrier nodes (BLACK) (Optional). Also clears any previous completed searches.
+PRESS A-KEY: Select A-Star algorithm.
+PRESS D-KEY: Select Depth First Search (DFS) algorithm.
+PRESS B-KEY: Select Breath First Search (BFS) algorithm.
+PRESS SPACEBAR: Start search (must have start and target node placed and search algorithm selected first)
+PRESS BACKSPACE-KEY: Stop searching (only when searching starts). Also, clears anything all search results.
+
+
+OTHER CONTROLS...
+
+PRESS C-KEY: Clears screen entirely. Only when program is not searching.
+PRESS ESC-KEY: Exit the app.
+''')
 	ROWS = 50
 	grid = make_grid(ROWS, width)
 
@@ -23,8 +41,7 @@ def main(win, width):
 		draw(win, grid, ROWS, width)
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
-				pygame.quit()
-
+				return pygame.quit()
 
 			if pygame.mouse.get_pressed()[0]: # LEFT
 				pos = pygame.mouse.get_pos()
@@ -60,8 +77,11 @@ def main(win, width):
 					algorithm = dfs
 				if event.key == pygame.K_a:
 					algorithm = astar
-				if event.key == pygame.K_q:
-					pygame.quit()
+				if event.key == pygame.K_c:
+					start, end = None, None
+					clear_screen(grid)
+				if event.key == pygame.K_ESCAPE:
+					return pygame.quit()
 		
 				if event.key == pygame.K_SPACE and start and end and algorithm:
 
@@ -71,7 +91,6 @@ def main(win, width):
 						for node in row:
 							node.update_neighbours(grid)
 
-					
 					algorithm(lambda: draw(win, grid, ROWS, width), grid, start, end)
 
 				if event.key == pygame.K_c:
