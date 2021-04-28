@@ -14,7 +14,7 @@ Needed libraries: *PyGame*
     * Remove start/target/block node
 * Press **Spacebar** key
     * Start the search from start to target node (only when both start and target nodes are set and search algorithm set)
-* Press **Q** key
+* Press **Escape** key
     * Quit the program (only when the program is not searching)
 * Press **D** key
     * Set the search algorithm to _**Depth-First Search (DFS)**_
