@@ -6,11 +6,11 @@ Implemented algorithms: *Depth-First Search (DFS)*, *Breadth-First Search (BFS)*
 Needed libraries: *PyGame*
 
 # Controls
-* Click/Drag Right mouse
+* Click/Drag left mouse
  * First click: sets the start node
  * Second click: sets the target/end node
  * Subsequent clicks: sets the block/barrier nodes, i.e. nodes that can't be traversed
-* Click/Drag Left mouse
+* Click/Drag right mouse
  * Remove start/target/block node
 * Press **Spacebar** key
  * Start the search from start to target node (only when both start and target nodes are set and search algorithm set)
@@ -22,7 +22,7 @@ Needed libraries: *PyGame*
  * Set the search algorithm to _**Breadth-First Search (DFS)**_
 * Press **A** key
  * Set the search algorithm to _**A* Search**_
-* Press **Esc** key
+* Press **Backspace** key
  * Stop the search (only when the program is searching)
 * Press **C** key
  * Clear everything
