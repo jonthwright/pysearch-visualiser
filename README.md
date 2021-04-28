@@ -7,25 +7,25 @@ Needed libraries: *PyGame*
 
 # Controls
 * Click/Drag left mouse
- * First click: sets the start node
- * Second click: sets the target/end node
- * Subsequent clicks: sets the block/barrier nodes, i.e. nodes that can't be traversed
+    * First click: sets the start node
+    * Second click: sets the target/end node
+    * Subsequent clicks: sets the block/barrier nodes, i.e. nodes that can't be traversed
 * Click/Drag right mouse
- * Remove start/target/block node
+    * Remove start/target/block node
 * Press **Spacebar** key
- * Start the search from start to target node (only when both start and target nodes are set and search algorithm set)
+    * Start the search from start to target node (only when both start and target nodes are set and search algorithm set)
 * Press **Q** key
- * Quit the program (only when the program is not searching)
+    * Quit the program (only when the program is not searching)
 * Press **D** key
- * Set the search algorithm to _**Depth-First Search (DFS)**_
+    * Set the search algorithm to _**Depth-First Search (DFS)**_
 * Press **B** key
- * Set the search algorithm to _**Breadth-First Search (DFS)**_
+    * Set the search algorithm to _**Breadth-First Search (DFS)**_
 * Press **A** key
- * Set the search algorithm to _**A* Search**_
+    * Set the search algorithm to _**A* Search**_
 * Press **Backspace** key
- * Stop the search (only when the program is searching)
+    * Stop the search (only when the program is searching)
 * Press **C** key
- * Clear everything
+    * Clear everything
  
 # How to use
 1. Run the _*Main.py*_ file to start the program
