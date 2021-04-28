@@ -29,13 +29,14 @@ Needed libraries: *PyGame*
  
 # How to use
 1. Run the _*Main.py*_ file to start the program
-1. Set the start node (right click)
-1. Set the target node (right click)
-1. Draw the barrier nodes (right click, draggable) *(Optional)*
-1. Select the search algorithm for the search method (see Controls)
-1. Press spacebar to start search
-1. Watch the program run
-1. Eventually, the program will draw a route from the target node to the start node
+2. Set the start node (left click)
+3. Set the target node (left click)
+4. Draw the barrier nodes (left click, draggable) *(Optional)*
+5. Clear start, target or a barrier node (right click) *(Optional)*
+6. Select the search algorithm for the search method (see Controls)
+7. Press spacebar to start search
+8. Watch the program run
+9. Eventually, the program will draw a route from the target node to the start node
 
 
 # Visual Legends
